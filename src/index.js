@@ -26,6 +26,19 @@ const theCoders = (driver, navigator) => {
   or if the names ar the same length "The driver and the navigator has equally long names"
   */
   
+  const checkLength = (driver, navigator) => {
+    if (driver.length > navigator.length){
+      console.log(`${driver} has the longest name.`);
+    }
+    else if (driver.length < navigator.length){
+    console.log(`${navigator} has the longest name.`);
+    }
+    else {
+    console.log("The driver and the navigator has equally long names");
+    }
+  }
+
+  checkLength ("Etna", "Mai")
   /*
   4) 
   to get user input you can use the prompt() and then store that into a variable.
