@@ -10,13 +10,15 @@ const theCoders = (driver, navigator) => {
       `The awesome coders for today is the driver ${driver} and the navigator ${navigator}`
     );
   };
-  theCoders("jennie", "tom");
+  theCoders("Jennie", "Alfons");
   /*
   2)
   Pass in only ONE name when you call the function and see what happens.
   (HINT, you should get undefined...)
   */
   
+  theCoders("Jennie");
+
   /*
   3) 
   create a function that checks which name is the longest when comparing the coders 
