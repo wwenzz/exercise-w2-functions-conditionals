@@ -61,7 +61,7 @@ function userAge(askAge) {
 }
 userAge(askAge);
 
-const calculationTest = () => {
+
   /*
     5)
     In this function we want to give the user a mathematical calculation to 
@@ -70,10 +70,42 @@ const calculationTest = () => {
     If not, give the user the correct answer so they can learn. 'Noooo, the answer is 11'
     You choose if to use addition, subtraction, multiplication or division. 
     */
-};
+
+    const userAnswer = prompt("What is 8 + 4")
+
+    const calculationTest = (userAnswer) => {
+      let correctAnswer = 12;
+      if (userAnswer == correctAnswer) {
+        console.log(`YUJUUU! Correct!`)
+      }
+      else {
+        console.log(`WRONG! The answer is ${correctAnswer}!`)
+      }
+  };
+
+  calculationTest(userAnswer);
 
 /*
   6) **BONUS**
   Make the calculation machine we just made show random calculations everytime you invoke the function.
   But hey, maybe limit the randomness to be numbers between 0-10?
   */
+
+
+const randomCalculation = () => {
+  
+  let x = Math.floor(Math.random() * 11)
+  let y = Math.floor(Math.random() * 11)
+  const randomCorrectAnser = x + y;
+
+  let userAnswer = prompt(`What is ${x} + ${y}?`)
+
+  if (userAnswer == randomCorrectAnser) {
+    console.log("YUJUUU! Correct!")
+  }
+  else {
+    console.log(`WRONG! The answer is ${randomCorrectAnser}!`)
+  }
+};
+
+randomCalculation();
